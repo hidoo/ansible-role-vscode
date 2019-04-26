@@ -15,5 +15,5 @@ install:
 
 script:
   - pipenv run ansible --version
-  - pipenv run test:lint
-  - pipenv run test:unit
+  - pipenv run test:unit:module
+  - pipenv run test:unit:role
