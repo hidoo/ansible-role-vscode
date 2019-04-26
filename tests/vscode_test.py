@@ -197,30 +197,6 @@ class TestVSCodeModule(unittest.TestCase):
                 actual = json.loads(stdout.getvalue())
                 self.assertEqual(True, actual["failed"])
 
-    def test_run_when_state_1_present(self):
-        with captured_stdout() as stdout:
-
-            try:
-                set_module_args({"name": "ms-vscode.node-debug2", "state": "present"})
-                vscode = VSCodeModule()
-                vscode.main()
-            except SystemExit:
-                actual = json.loads(stdout.getvalue())
-                self.assertEqual(True, actual["changed"])
-                self.assertEqual(0, actual["rc"])
-
-    def test_run_when_state_2_absent(self):
-        with captured_stdout() as stdout:
-
-            try:
-                set_module_args({"name": "ms-vscode.node-debug2", "state": "absent"})
-                vscode = VSCodeModule()
-                vscode.main()
-            except SystemExit:
-                actual = json.loads(stdout.getvalue())
-                self.assertEqual(True, actual["changed"])
-                self.assertEqual(0, actual["rc"])
-
 
 if __name__ == "__main__":
     unittest.main()
