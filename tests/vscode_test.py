@@ -201,7 +201,7 @@ class TestVSCodeModule(unittest.TestCase):
         with captured_stdout() as stdout:
 
             try:
-                set_module_args({"name": "teabyii.ayu", "state": "present"})
+                set_module_args({"name": "ms-vscode.node-debug2", "state": "present"})
                 vscode = VSCodeModule()
                 vscode.main()
             except SystemExit:
@@ -213,7 +213,7 @@ class TestVSCodeModule(unittest.TestCase):
         with captured_stdout() as stdout:
 
             try:
-                set_module_args({"name": "teabyii.ayu", "state": "absent"})
+                set_module_args({"name": "ms-vscode.node-debug2", "state": "absent"})
                 vscode = VSCodeModule()
                 vscode.main()
             except SystemExit:
