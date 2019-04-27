@@ -4,7 +4,7 @@
     name: visual-studio-code
     state: present
     update_homebrew: yes
-  when: not {{ vscode.skip_install | default(False)}}
+  when: not vscode.skip_install | default(False)
   become: no
 
 - name: Install extensions for Visual Studio Code
