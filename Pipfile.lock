@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "20060a46a894f8c2ba8a6ed7f692e084686174cb6698fde7aa85877938248342"
+            "sha256": "dc276d565dca4dbbc8bd013801459ee1be2eb290f113509844a4c5b47a446e51"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -19,10 +19,10 @@
     "develop": {
         "ansible": {
             "hashes": [
-                "sha256:a0153e2de3619b7e307df179cd91a3c3804cf1fe048273fe4ea5238b76679ff1"
+                "sha256:8e9403e755ce8ef27b6066cdd7a4c567aa80ebe2fd90d0ff8efa0a725d246986"
             ],
             "index": "pypi",
-            "version": "==2.8.4"
+            "version": "==2.8.5"
         },
         "appdirs": {
             "hashes": [
@@ -145,11 +145,11 @@
         },
         "flake8": {
             "hashes": [
-                "sha256:19241c1cbc971b9962473e4438a2ca19749a7dd002dd1a946eaba171b4114548",
-                "sha256:8e9dfa3cecb2400b3738a42c54c3043e821682b9c840b0448c0503f781130696"
+                "sha256:859996073f341f2670741b51ec1e67a01da142831aa1fdc6242dbf88dffbe661",
+                "sha256:a796a115208f5c03b18f332f7c11729812c8c3ded6c46319c59b53efd3819da8"
             ],
             "index": "pypi",
-            "version": "==3.7.8"
+            "version": "==3.7.7"
         },
         "jinja2": {
             "hashes": [
