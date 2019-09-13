@@ -14,16 +14,10 @@ def get_playbook_results(process):
     pattern = r"ok=(\d+)\s+changed=(\d+)\s+unreachable=(\d+)\s+failed=(\d+)"
     result = re.search(pattern, process.stdout.decode("utf8"))
     ok, changed, unreachable, failed = result.groups()
-    return {
-        "ok": ok,
-        "changed": changed,
-        "unreachable": unreachable,
-        "failed": failed
-    }
+    return {"ok": ok, "changed": changed, "unreachable": unreachable, "failed": failed}
 
 
 class TestVSCodeRole(unittest.TestCase):
-
     @classmethod
     def setUpClass(self):
         command = ["brew", "cask", "install", "visual-studio-code"]
@@ -43,7 +37,7 @@ class TestVSCodeRole(unittest.TestCase):
             "./tests/inventory",
             "./tests/test.yml",
             "--syntax-check",
-            "-v"
+            "-v",
         ]
         process = subprocess.run(command, stdout=PIPE, stderr=PIPE)
         print_stdout(process)
@@ -57,17 +51,12 @@ class TestVSCodeRole(unittest.TestCase):
             "./tests/test.yml",
             "-t",
             "install_vscode_when_skip_install",
-            "-v"
+            "-v",
         ]
         process = subprocess.run(command, stdout=PIPE, stderr=PIPE)
         print_stdout(process)
         actual = get_playbook_results(process)
-        expected = {
-            "ok": "0",
-            "changed": "0",
-            "unreachable": "0",
-            "failed": "0"
-        }
+        expected = {"ok": "0", "changed": "0", "unreachable": "0", "failed": "0"}
         self.assertEqual(0, process.returncode)
         self.assertDictEqual(expected, actual)
 
@@ -79,17 +68,12 @@ class TestVSCodeRole(unittest.TestCase):
             "./tests/test.yml",
             "-t",
             "extention_install_when_not_installed",
-            "-v"
+            "-v",
         ]
         process = subprocess.run(command, stdout=PIPE, stderr=PIPE)
         print_stdout(process)
         actual = get_playbook_results(process)
-        expected = {
-            "ok": "1",
-            "changed": "1",
-            "unreachable": "0",
-            "failed": "0"
-        }
+        expected = {"ok": "1", "changed": "1", "unreachable": "0", "failed": "0"}
         self.assertEqual(0, process.returncode)
         self.assertDictEqual(expected, actual)
 
@@ -101,17 +85,12 @@ class TestVSCodeRole(unittest.TestCase):
             "./tests/test.yml",
             "-t",
             "extention_install_when_already_installed",
-            "-v"
+            "-v",
         ]
         process = subprocess.run(command, stdout=PIPE, stderr=PIPE)
         print_stdout(process)
         actual = get_playbook_results(process)
-        expected = {
-            "ok": "1",
-            "changed": "0",
-            "unreachable": "0",
-            "failed": "0"
-        }
+        expected = {"ok": "1", "changed": "0", "unreachable": "0", "failed": "0"}
         self.assertEqual(0, process.returncode)
         self.assertDictEqual(expected, actual)
 
@@ -123,17 +102,12 @@ class TestVSCodeRole(unittest.TestCase):
             "./tests/test.yml",
             "-t",
             "extention_uninstall_when_already_installed",
-            "-v"
+            "-v",
         ]
         process = subprocess.run(command, stdout=PIPE, stderr=PIPE)
         print_stdout(process)
         actual = get_playbook_results(process)
-        expected = {
-            "ok": "1",
-            "changed": "1",
-            "unreachable": "0",
-            "failed": "0"
-        }
+        expected = {"ok": "1", "changed": "1", "unreachable": "0", "failed": "0"}
         self.assertEqual(0, process.returncode)
         self.assertDictEqual(expected, actual)
 
@@ -145,17 +119,12 @@ class TestVSCodeRole(unittest.TestCase):
             "./tests/test.yml",
             "-t",
             "extention_uninstall_when_already_uninstalled",
-            "-v"
+            "-v",
         ]
         process = subprocess.run(command, stdout=PIPE, stderr=PIPE)
         print_stdout(process)
         actual = get_playbook_results(process)
-        expected = {
-            "ok": "1",
-            "changed": "0",
-            "unreachable": "0",
-            "failed": "0"
-        }
+        expected = {"ok": "1", "changed": "0", "unreachable": "0", "failed": "0"}
         self.assertEqual(0, process.returncode)
         self.assertDictEqual(expected, actual)
 

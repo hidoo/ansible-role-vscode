@@ -84,7 +84,9 @@ class TestVSCodeModule(unittest.TestCase):
                 VSCodeModule, "is_extension_installed"
             ) as mocked_is_extension_installed:
                 name = "hoge"
-                stdout = "Uninstalling {0}...\nExtension '{0}' was successfully uninstalled!"  # noqa E501
+                stdout = (
+                    "Uninstalling {0}...\nExtension '{0}' was successfully uninstalled!"
+                )  # noqa E501
                 mocked_run_command.return_value = (0, stdout.format(name), "")
                 mocked_is_extension_installed.return_value = (0, True)
                 set_module_args({"name": name})
