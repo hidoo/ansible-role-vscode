@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "329771db8d8863b7144cd3f5b39ef69bbb9489500c91c67d32672eb0b256cd63"
+            "sha256": "40d6316b3f2bd7270a1dcca07e1809fbcddd62ff6549e95b15914a333f2c2f1f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -100,11 +100,11 @@
         },
         "commitizen": {
             "hashes": [
-                "sha256:457206e160054aa80b5059d1bc099668de10117f0fae1864c11884a7011caa14",
-                "sha256:f27ec0b58db3c1c99b5986a6dbf778f3bda40c8d21e2c530e18ef2f423e3b17c"
+                "sha256:295c0eddb244678021d9bf252fd3320e3d2c40eaf855591f9f5dab9d57965fb4",
+                "sha256:9f8883ee5ed354ae06975fe70d6530d5c99e1d7c62477120cd5006a833f23b16"
             ],
             "index": "pypi",
-            "version": "==1.16.0"
+            "version": "==1.16.1"
         },
         "cryptography": {
             "hashes": [
@@ -156,10 +156,10 @@
         },
         "jinja2": {
             "hashes": [
-                "sha256:74320bb91f31270f9551d46522e33af46a80c3d619f4a4bf42b3164d30b5911f",
-                "sha256:9fe95f19286cfefaa917656583d020be14e7859c6b0252588391e47db34527de"
+                "sha256:93187ffbc7808079673ef52771baa950426fd664d3aad1d0fa3e95644360e250",
+                "sha256:b0eaf100007721b5c16c1fc1eecb87409464edc10469ddc9a22a27a99123be49"
             ],
-            "version": "==2.10.3"
+            "version": "==2.11.1"
         },
         "markupsafe": {
             "hashes": [
