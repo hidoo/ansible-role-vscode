@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5109812b43c8f342d52da7e6010811689d25447dfd06b425666143ca4c8b0b47"
+            "sha256": "cb08e3b2de1ecb898a1eab6a7c90406a9c86d639a744c761bf6d3bb671d367c1"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -33,11 +33,11 @@
         },
         "attrs": {
             "hashes": [
-                "sha256:0ef97238856430dcf9228e07f316aefc17e8939fc8507e18c6501b761ef1a42a",
-                "sha256:2867b7b9f8326499ab5b0e2d12801fa5c98842d2cbd22b35112ae04bf85b4dff"
+                "sha256:26b54ddbbb9ee1d34d5d3668dd37d6cf74990ab23c828c2888dccdceee395594",
+                "sha256:fce7fc47dfc976152e82d53ff92fa0407700c21acd20886a13777a0d20e655dc"
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
-            "version": "==20.1.0"
+            "version": "==20.2.0"
         },
         "black": {
             "hashes": [
@@ -98,11 +98,11 @@
         },
         "commitizen": {
             "hashes": [
-                "sha256:1c3eba85bd939a65185def470eb62e2c35cf3051489b08ec9998829d615c3a89",
-                "sha256:ef1e40d03b8d87cf4423098756fa1b26d1a13eaab6e214ffa8852eab8d9e75a8"
+                "sha256:8bd59e2546cb7ea330d2fb046e7d2809f30cc5655758ba35132b6259ecafd46a",
+                "sha256:f55bd9a68fea1d6dac08f0d89b4fac74f97140c666446814baac8d52ddf55ee9"
             ],
             "index": "pypi",
-            "version": "==1.21.0"
+            "version": "==2.3.1"
         },
         "cryptography": {
             "hashes": [
@@ -309,14 +309,6 @@
             ],
             "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==0.5.11"
-        },
-        "typing": {
-            "hashes": [
-                "sha256:1187fb9c82fd670d10aa07bbb6cfcfe4bdda42d6fab8d5134f04e8c4d0b71cc9",
-                "sha256:283d868f5071ab9ad873e5e52268d611e851c870a2ba354193026f2dfb29d8b5"
-            ],
-            "markers": "python_version >= '2.7' and python_version not in '3.0, 3.1, 3.2, 3.3'",
-            "version": "==3.7.4.3"
         },
         "wcwidth": {
             "hashes": [
